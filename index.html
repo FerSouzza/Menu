@@ -15,6 +15,7 @@
       justify-content: center;
       background-color: #333;
       padding: 10px 0;
+      flex-wrap: wrap;
     }
 
     nav a {
@@ -25,14 +26,15 @@
     nav img {
       width: 100px;
       height: 50px;
-      object-fit: cover;
-      border: 2px solid transparent;
+      object-fit: contain;
+      background-color: white;
+      padding: 5px;
       border-radius: 5px;
-      transition: border 0.3s;
+      transition: transform 0.3s;
     }
 
     nav img:hover {
-      border: 2px solid #fff;
+      transform: scale(1.1);
     }
 
     main {
@@ -51,33 +53,29 @@
   </style>
 </head>
 <body>
-
-  <!-- Menu horizontal com imagens -->
   <nav>
     <a href="https://www.tecmundo.com.br" target="_blank">
-      <img src="https://via.placeholder.com/100x50?text=TecMundo" alt="TecMundo">
+      <img src="https://www.tecmundo.com.br/bundles/tec/img/logos/logo-tecmundo.png" alt="TecMundo">
     </a>
     <a href="https://olhardigital.com.br" target="_blank">
-      <img src="https://via.placeholder.com/100x50?text=Olhar+Digital" alt="Olhar Digital">
+      <img src="https://olhardigital.com.br/wp-content/themes/olhardigital/assets/img/logo-topo.svg" alt="Olhar Digital">
     </a>
     <a href="https://www.cnet.com" target="_blank">
-      <img src="https://via.placeholder.com/100x50?text=CNET" alt="CNET">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/CNET_logo.svg" alt="CNET">
     </a>
     <a href="https://www.theverge.com" target="_blank">
-      <img src="https://via.placeholder.com/100x50?text=The+Verge" alt="The Verge">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/The_Verge_logo.svg" alt="The Verge">
     </a>
     <a href="https://www.techcrunch.com" target="_blank">
-      <img src="https://via.placeholder.com/100x50?text=TechCrunch" alt="TechCrunch">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/TechCrunch_Logo.svg" alt="TechCrunch">
     </a>
     <a href="https://www.wired.com" target="_blank">
-      <img src="https://via.placeholder.com/100x50?text=Wired" alt="Wired">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Wired_logo.svg" alt="Wired">
     </a>
     <a href="https://g1.globo.com/economia/tecnologia/" target="_blank">
-      <img src="https://via.placeholder.com/100x50?text=G1+Tecnologia" alt="G1 Tecnologia">
+      <img src="https://s2-g1.glbimg.com/Y5_0nX06nQkCNt8ndOZloTz4vbg=/0x0:1080x1080/1000x1000/top/smart/filters:strip_icc()/s.glbimg.com/jo/g1/f/original/2012/11/19/g1logo.jpg" alt="G1 Tecnologia">
     </a>
   </nav>
-
-  <!-- Conteúdo principal -->
   <main>
     <h1>Explorando o Futuro da Tecnologia</h1>
 
@@ -97,8 +95,6 @@
       O futuro pertence a quem está preparado. Aprender sobre programação, análise de dados e cibersegurança pode abrir portas no mercado de trabalho e permitir que mais pessoas participem ativamente da construção desse novo mundo.
     </p>
   </main>
-
-  <!-- Rodapé -->
   <footer>
     <p>&copy; 2025 - Site dedicado à divulgação de tecnologia e inovação. Desenvolvido com HTML e CSS.</p>
   </footer>
